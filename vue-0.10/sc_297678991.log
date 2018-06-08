@@ -1,0 +1,10 @@
+20180608 163641.441 [18296] CLI Starting up; pid 18296
+20180608 163641.441 [18296] CLI Sauce Connect 4.2, build 1160 a2d8b04
+20180608 163641.441 [18296] CLI Command line arguments: E:\_hahayes\study-vue-source\vue-0.10\node_modules\sauce-tunnel\vendor\win32\bin\sc.exe -u undefined -k **** -i 297678991 -P 0
+20180608 163654.391 [18296] CLI GET https://saucelabs.com/rest/v1/undefined/tunnels?full=1 failed, response code: 401.
+20180608 163654.391 [18296] CLI GET https://saucelabs.com/rest/v1/undefined/tunnels?full=1: HTTP response code indicated failure.
+20180608 163654.392 [18296] CLI response: {"message": "Not authorized"}.
+20180608 163654.392 [18296] CLI failed to remove matching tunnels.
+20180608 163658.398 [18296] CLI GET https://saucelabs.com/rest/v1/undefined/tunnels?full=1 failed, response code: 401.
+20180608 163658.399 [18296] CLI GET https://saucelabs.com/rest/v1/undefined/tunnels?full=1: HTTP response code indicated failure.
+20180608 163658.399 [18296] CLI response: {"message": "Not authorized"}.

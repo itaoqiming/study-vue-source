@@ -1,0 +1,25 @@
+20180608 164021.870 [18876] Sauce Connect 4.3.16, build 2397 a59c79b
+20180608 164021.919 [18876] Trying to autodetect proxy settings
+20180608 164021.928 [18876] Starting up; pid 18876
+20180608 164021.929 [18876] Command line arguments: E:\_hahayes\study-vue-source\vue-0.10\node_modules\sauce-tunnel\vendor\win32\bin\sc.exe -u undefined -k **** -i 297679214 -P 0
+20180608 164021.930 [18876] Log file: sc_297679214.log
+20180608 164021.930 [18876] Pid file: C:\Users\tao_qiming\AppData\Roaming/sc_client_297679214.pid
+20180608 164021.931 [18876] Timezone: Unknown GMT OFfset: -99h
+20180608 164021.932 [18876] Using no proxy for connecting to Sauce Labs REST API.
+20180608 164021.985 [18876] Resolving saucelabs.com to 162.222.75.227 took 53 ms.
+20180608 164027.281 [18876] PROXY *** scproxy started ***
+20180608 164027.291 [18876] PROXY found DNS server 192.168.10.6
+20180608 164027.291 [18876] PROXY found DNS server 11.111.46.166
+20180608 164027.291 [18876] PROXY found DNS server 192.168.10.6
+20180608 164027.291 [18876] PROXY found DNS server 11.111.46.166
+20180608 164027.531 [18876] Started scproxy on port 54834.
+20180608 164027.531 [18876] Please wait for 'you may start your tests' to start your tests.
+20180608 164027.531 [18876] Starting secure remote tunnel VM...
+20180608 164033.155 [18876] GET https://saucelabs.com/rest/v1/undefined/tunnels?full=1: HTTP response code indicated failure.
+20180608 164033.157 [18876] Response: {"message": "Not authorized"}.
+20180608 164033.159 [18876] Error checking overlapping tunnels.
+20180608 164033.160 [18876] Cleaning up.
+20180608 164033.164 [18876] Sauce Connect could not establish a connection.
+20180608 164033.166 [18876] Please check your firewall and proxy settings.
+20180608 164033.167 [18876] You can also use sc --doctor to launch Sauce Connect in diagnostic mode.
+20180608 164033.169 [18876] Goodbye.
