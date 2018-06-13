@@ -4,7 +4,7 @@ var fs = require('vinyl-fs'),
     component = require('gulp-component'),
     map = require('map-stream')
 
-var dest = './dist',
+var dest = './study/dist',
     headerText,
     headerTemplate =
     '/*\n' +
@@ -14,12 +14,12 @@ var dest = './dist',
     '*/\n'
 
 module.exports = function (grunt) {
-    grunt.registerTask('build', function (version) {
-
+    grunt.registerTask('build-s', function (version) {
+console.log(4342)
         version = version || grunt.config.get('version')
         headerText = headerTemplate.replace(/{{version}}/, version)
-        
-        fs.src('./component.json')
+
+        fs.src('./componentx.json')
             .pipe(component.scripts({
                 standalone: 'Vue',
                 name: 'vue'

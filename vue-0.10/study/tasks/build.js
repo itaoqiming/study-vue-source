@@ -18,7 +18,7 @@ module.exports = function (grunt) {
 
         version = version || grunt.config.get('version')
         headerText = headerTemplate.replace(/{{version}}/, version)
-        
+
         fs.src('./component.json')
             .pipe(component.scripts({
                 standalone: 'Vue',

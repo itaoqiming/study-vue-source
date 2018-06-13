@@ -55,13 +55,13 @@ module.exports = function( grunt ) {
                     'test/vue.test.js',
                     'test/unit/utils/chai.js',
                     'test/unit/utils/prepare.js',
-                    'test/unit/specs/*.js'
+                    'test/unit/specs/text-parser.js'
                 ],
-                singleRun: true
+                singleRun: false
             },
             browsers: {
                 options: {
-                   browsers: ['Chrome', 'Firefox', 'Safari'],
+                   browsers: ['Chrome'],
                    reporters: ['progress']
                 }
             },
@@ -182,6 +182,11 @@ module.exports = function( grunt ) {
         'jshint',
         'build',
         'test'
+    ])
+
+    grunt.registerTask( 'tao', [
+        'instrument',
+        'karma:phantom'
     ])
     
 }

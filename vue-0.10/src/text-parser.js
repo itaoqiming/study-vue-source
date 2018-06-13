@@ -1,6 +1,6 @@
 var openChar        = '{',
     endChar         = '}',
-    ESCAPE_RE       = /[-.*+?^${}()|[\]\/\\]/g,
+    ESCAPE_RE       = /[-.*+?^${}()|[\]\/\\]/g,//需要转义的正则表达式字符
     // lazy require
     Directive
 
@@ -10,12 +10,14 @@ function buildInterpolationRegex () {
     var open = escapeRegex(openChar),
         end  = escapeRegex(endChar)
     return new RegExp(open + open + open + '?(.+?)' + end + '?' + end + end)
+    // “{m,n}?”、“{m,}?”、“??”、“*?”和“+?” 在匹配量词后加上“?”，即变成属于非贪婪模式的量词
 }
 
 function escapeRegex (str) {
     return str.replace(ESCAPE_RE, '\\$&')
+    // $&   与 regexp 相匹配的子串。
 }
-
+// 这个可以修改 插值分隔符
 function setDelimiters (delimiters) {
     openChar = delimiters[0]
     endChar = delimiters[1]
@@ -27,7 +29,7 @@ function setDelimiters (delimiters) {
  *  Parse a piece of text, return an array of tokens
  *  token types:
  *  1. plain string
- *  2. object with key = binding key
+ *  2. object with key = binding key & html = false
  *  3. object with key & html = true
  */
 function parse (text) {
@@ -90,7 +92,7 @@ function inlineFilters (key) {
     return '(' + key + ')'
 }
 
-exports.parse         = parse
-exports.parseAttr     = parseAttr
-exports.setDelimiters = setDelimiters
-exports.delimiters    = [openChar, endChar]
+exports.parse         = parse //解析函数 插值分隔符转下义 转成分隔的数组
+exports.parseAttr     = parseAttr // 
+exports.setDelimiters = setDelimiters //设置插值分隔符 更新插值正则表达式
+exports.delimiters    = [openChar, endChar] // 分隔符
