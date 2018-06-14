@@ -104,7 +104,7 @@ var utils = module.exports = {
     },
 
     /**
-     *  Define an ienumerable property
+     *  Define an inenumerable property
      *  This avoids it being included in JSON.stringify
      *  or for...in loops.
      */
